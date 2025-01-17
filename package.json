@@ -1,0 +1,15 @@
+{
+  "name": "tailwind_clone_exercise",
+  "version": "1.0.0",
+  "description": "Tailwind css cloning website exercise",
+  "main": "index.js",
+  "scripts": {
+    "style": "npx tailwindcss -i ./styles/input.css -o ./public/styles/output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}
