@@ -553,3 +553,41 @@ video {
 [hidden]:where(:not([hidden="until-found"])) {
   display: none;
 }
+
+.relative {
+  position: relative;
+}
+
+.m-3 {
+  margin: 0.75rem;
+}
+
+.block {
+  display: block;
+}
+
+.h-5xl {
+  height: 800px;
+}
+
+.h-72 {
+  height: 18rem;
+}
+
+.w-5xl {
+  width: 200px;
+}
+
+.rounded-3xl {
+  border-radius: 1.5rem;
+}
+
+.rounded-b-semifull {
+  border-bottom-right-radius: 200px;
+  border-bottom-left-radius: 200px;
+}
+
+.bg-blue-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 64 175 / var(--tw-bg-opacity, 1));
+}
