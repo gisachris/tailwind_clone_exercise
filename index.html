@@ -9,19 +9,33 @@
 </head>
 
 <body class="m-3">
-    <div id="heroSection" class="rounded-b-semifull block h-5xl overflow-hidden bg-gray-400">
-        <div id="heroDesign" class="relative min-w-full min-h-full">
+    <div id="heroSection" class="relative rounded-b-semifull block h-5xl overflow-hidden">
+        <div id="heroDesign" class="absolute min-w-full min-h-full">
             <div id="design1"
-                class="bg-fire-blue absolute rounded-br-casualfull min-w-full min-h-full z-20 right-quater w-xplarge">
+                class="bg-fire-blue absolute rounded-br-casualfull min-w-full min-h-full -z-10 right-quater w-xplarge">
             </div>
             <div id="design2"
-                class="bg-fire-light-blue absolute rounded-br-casualfull min-w-full min-h-full z-10 right-thquater">
+                class="bg-fire-light-blue absolute rounded-br-casualfull min-w-full min-h-full -z-20 right-thquater">
             </div>
-            <div id="design3" class="bg-fire-lighter-blue absolute inset-0 min-w-full min-h-full z-0">
+            <div id="design3" class="bg-fire-lighter-blue absolute inset-0 min-w-full min-h-full -z-30">
                 <img src="./public/imgs/banner-image.jpeg"
                     class="min-w-full min-h-full bg-contain bg-center opacity-15">
             </div>
         </div>
+        <nav class="flex justify-between mt-10">
+            <div id="logo" class="min-w-fit ml-8">
+                <img src="./public/imgs/logo.png" alt="logo">
+            </div>
+            <div id="nav" class="mr-20 my-auto">
+                <ul class="flex gap-x-12 min-h-full content-center justify-center">
+                    <li>Home</li>
+                    <li>Our Shop</li>
+                    <li>Product Details</li>
+                    <li>Contact Us</li>
+                    <li><button class="">SIGN IN</button></li>
+                </ul>
+            </div>
+        </nav>
     </div>
 </body>
 
