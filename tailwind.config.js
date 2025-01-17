@@ -11,6 +11,12 @@ module.exports = {
       },
       borderRadius: {
         'semifull': '200px'
+      },
+      objectPosition: {
+        'top-50': '50% 0%',
+        'left-50': '0% 50%',
+        'right-50': '100% 50%',
+        'bottom-50': '50% 100%',
       }
     },
   },
