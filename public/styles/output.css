@@ -566,8 +566,12 @@ video {
   inset: 0px;
 }
 
-.right-72 {
-  right: 18rem;
+.right-quater {
+  right: 45%;
+}
+
+.right-thquater {
+  right: 15%;
 }
 
 .z-0 {
@@ -598,6 +602,10 @@ video {
   min-height: 100%;
 }
 
+.w-xplarge {
+  width: 25rem;
+}
+
 .min-w-full {
   min-width: 100%;
 }
@@ -611,8 +619,8 @@ video {
   border-bottom-left-radius: 200px;
 }
 
-.rounded-br-semifull {
-  border-bottom-right-radius: 200px;
+.rounded-br-casualfull {
+  border-bottom-right-radius: 700px;
 }
 
 .bg-blue-400 {
@@ -625,12 +633,175 @@ video {
   background-color: rgb(37 99 235 / var(--tw-bg-opacity, 1));
 }
 
-.bg-blue-800 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(30 64 175 / var(--tw-bg-opacity, 1));
-}
-
 .bg-gray-400 {
   --tw-bg-opacity: 1;
   background-color: rgb(156 163 175 / var(--tw-bg-opacity, 1));
+}
+
+.bg-fire-blue {
+  --tw-bg-opacity: 1;
+  background-color: rgb(1 113 248 / var(--tw-bg-opacity, 1));
+}
+
+.bg-fire-light-blue {
+  --tw-bg-opacity: 1;
+  background-color: rgb(1 124 249 / var(--tw-bg-opacity, 1));
+}
+
+.bg-fire-lighter-blue {
+  --tw-bg-opacity: 1;
+  background-color: rgb(16 143 247 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[\] {
+  background-color: ;
+}
+
+.bg-\[rl\] {
+  background-color: rl;
+}
+
+.bg-\[u\] {
+  background-color: u;
+}
+
+.bg-\[url\] {
+  background-color: url;
+}
+
+.bg-opacity-50 {
+  --tw-bg-opacity: 0.5;
+}
+
+.bg-opacity-30 {
+  --tw-bg-opacity: 0.3;
+}
+
+.bg-opacity-20 {
+  --tw-bg-opacity: 0.2;
+}
+
+.bg-opacity-10 {
+  --tw-bg-opacity: 0.1;
+}
+
+.bg-\[url\(\)\] {
+  background-image: url();
+}
+
+.bg-\[url\(\.\/\)\] {
+  background-image: url(./);
+}
+
+.bg-\[url\(\.\/public\)\] {
+  background-image: url(./public);
+}
+
+.bg-\[url\(\.\/public\/\)\] {
+  background-image: url(./public/);
+}
+
+.bg-\[url\(\.\/public\/im\)\] {
+  background-image: url(./public/im);
+}
+
+.bg-\[url\(\.\/public\/imgs\)\] {
+  background-image: url(./public/imgs);
+}
+
+.bg-\[url\(\.\/public\/imgs\/\)\] {
+  background-image: url(./public/imgs/);
+}
+
+.bg-\[url\(\.\/public\/imgs\/baner\)\] {
+  background-image: url(./public/imgs/baner);
+}
+
+.bg-\[url\(\.\/public\/imgs\/banner\)\] {
+  background-image: url(./public/imgs/banner);
+}
+
+.bg-\[url\(\.\/public\/imgs\/banner-imagw\)\] {
+  background-image: url(./public/imgs/banner-imagw);
+}
+
+.bg-\[url\(\.\/public\/imgs\/banner-image\)\] {
+  background-image: url(./public/imgs/banner-image);
+}
+
+.bg-\[url\(\.\/public\/imgs\/banner-image\.jpeg\)\] {
+  background-image: url(./public/imgs/banner-image.jpeg);
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-contain {
+  background-size: contain;
+}
+
+.bg-center {
+  background-position: center;
+}
+
+.bg-right {
+  background-position: right;
+}
+
+.bg-left {
+  background-position: left;
+}
+
+.bg-left-bottom {
+  background-position: left bottom;
+}
+
+.bg-right-bottom {
+  background-position: right bottom;
+}
+
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.opacity-5 {
+  opacity: 0.05;
+}
+
+.opacity-10 {
+  opacity: 0.1;
+}
+
+.opacity-20 {
+  opacity: 0.2;
+}
+
+.opacity-30 {
+  opacity: 0.3;
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.opacity-50 {
+  opacity: 0.5;
+}
+
+.opacity-70 {
+  opacity: 0.7;
+}
+
+.opacity-60 {
+  opacity: 0.6;
+}
+
+.opacity-15 {
+  opacity: 0.15;
+}
+
+.filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }

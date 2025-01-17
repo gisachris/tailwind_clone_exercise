@@ -4,19 +4,24 @@ module.exports = {
   theme: {
     extend: {
       width: {
-        '5xl': '200px'
+        '5xl': '200px',
+        'xplarge': '25rem'
       },
       height: {
         '5xl': '800px'
       },
       borderRadius: {
-        'semifull': '200px'
+        'semifull': '200px',
+        'casualfull': '700px'
       },
-      objectPosition: {
-        'top-50': '50% 0%',
-        'left-50': '0% 50%',
-        'right-50': '100% 50%',
-        'bottom-50': '50% 100%',
+      inset: {
+        'quater': '45%',
+        'thquater': '15%',
+      },
+      backgroundColor: {
+        'fire-blue': '#0171f8',
+        'fire-light-blue': '#017cf9',
+        'fire-lighter-blue': '#108ff7'
       }
     },
   },
