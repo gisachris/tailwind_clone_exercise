@@ -1,13 +1,11 @@
-//hover effect on navigation
-const navBar = document.getElementById('navList')
+const navBar = document.getElementById('navList');
+let activeLink = navBar.querySelector('.navActive');
 
 navBar.addEventListener('click', (e) => {
-    let allLinks = navBar.querySelectorAll("li")
+    let currLink = e.target.closest('.navHover');
+    if (!currLink || currLink === activeLink) return;
 
-    allLinks.forEach(link => {
-        if (link.classList.contains("navActive")) link.classList.remove("navActive")
-    })
-
-    let currLink = e.target.parentElement
-    currLink.classList.add('navActive')
-})
+    if (activeLink) activeLink.classList.remove('navActive');
+    currLink.classList.add('navActive');
+    activeLink = currLink;
+});
