@@ -5,10 +5,11 @@ module.exports = {
     extend: {
       width: {
         '5xl': '200px',
-        'xplarge': '25rem'
+        'xplarge': '25rem',
+        '85': '23rem'
       },
       height: {
-        '5xl': '800px'
+        '5xl': '900px'
       },
       borderRadius: {
         'semifull': '200px',
@@ -25,7 +26,11 @@ module.exports = {
         'fire-pink': '#ec636d'
       },
       fontFamily: {
-        'quicksand': ['Quicksand']
+        'quicksand': ['Quicksand'],
+        'roboto': ['Roboto']
+      },
+      boxShadow: {
+        'custom-xs': '0 1px 1px rgba(0, 0, 0, 0.02)'
       }
     },
   },
