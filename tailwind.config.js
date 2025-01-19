@@ -25,7 +25,8 @@ module.exports = {
         'fire-pink': '#ec636d'
       },
       fontFamily: {
-        'quicksand': ['Quicksand']
+        'quicksand': ['Quicksand'],
+        'roboto': ['Roboto']
       }
     },
   },
