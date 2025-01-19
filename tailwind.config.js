@@ -9,7 +9,7 @@ module.exports = {
         '85': '23rem'
       },
       height: {
-        '5xl': '800px'
+        '5xl': '900px'
       },
       borderRadius: {
         'semifull': '200px',
@@ -28,6 +28,9 @@ module.exports = {
       fontFamily: {
         'quicksand': ['Quicksand'],
         'roboto': ['Roboto']
+      },
+      boxShadow: {
+        'custom-xs': '0 1px 1px rgba(0, 0, 0, 0.02)'
       }
     },
   },
