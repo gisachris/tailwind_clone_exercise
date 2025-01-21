@@ -9,3 +9,24 @@ navBar.addEventListener('click', (e) => {
     currLink.classList.add('navActive');
     activeLink = currLink;
 });
+
+//navigation bar sticky scroll
+const navInputTrigger = document.getElementById("heroInput").firstElementChild
+
+//intersection observer
+const navIntersectionOptions = {
+    root: null,
+    threshold: 1.0
+}
+
+let navIntersectionObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            console.log('item enters the screen!')
+            // observer.unobserve(navInputTrigger)
+        }
+    })
+}, navIntersectionOptions)
+
+//observe the input element
+navIntersectionObserver.observe(navInputTrigger)
