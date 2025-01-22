@@ -12,18 +12,30 @@ navBar.addEventListener('click', (e) => {
 
 //navigation bar sticky scroll
 const navInputTrigger = document.getElementById("heroInput").firstElementChild
+const navigationBar = document.getElementById("nav")
+
+function navBarMover(direction, cssString) {
+    if (direction === 'top') {
+
+    } else {
+
+    }
+}
 
 //intersection observer
 const navIntersectionOptions = {
     root: null,
-    threshold: 1.0
+    threshold: 0
 }
 
 let navIntersectionObserver = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            console.log('item enters the screen!')
-            // observer.unobserve(navInputTrigger)
+            if (entry.boundingClientRect.top > 0) { //moving down
+                // navBarMover('bottom', 'relative flex justify-between mt-10')
+            } else if (entry.boundingClientRect.top < 0) { //moving up
+                // navBarMover('bottom', 'sticky flex justify-between mt-10')
+            }
         }
     })
 }, navIntersectionOptions)
