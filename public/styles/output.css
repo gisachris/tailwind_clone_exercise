@@ -690,6 +690,10 @@ video {
   margin-bottom: 5rem;
 }
 
+.mb-20{
+  margin-bottom: 5rem;
+}
+
 .ml-8{
   margin-left: 2rem;
 }
@@ -870,6 +874,10 @@ video {
 
 .rounded-full{
   border-radius: 9999px;
+}
+
+.rounded-xl{
+  border-radius: 0.75rem;
 }
 
 .rounded-xl{
@@ -1130,30 +1138,10 @@ video {
   transition-duration: 150ms;
 }
 
-.duration-300{
-  transition-duration: 300ms;
-}
-
 .duration-200{
   transition-duration: 200ms;
 }
 
-.duration-150{
-  transition-duration: 150ms;
-}
-
-.duration-100{
-  transition-duration: 100ms;
-}
-
 .ease-in-out{
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.ease-in{
-  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
-}
-
-.ease-out{
-  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
