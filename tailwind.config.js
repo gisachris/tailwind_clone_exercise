@@ -25,7 +25,8 @@ module.exports = {
         'fire-lighter-blue': '#108ff7',
       },
       colors: {
-        'fire-pink': '#ec636d'
+        'fire-pink': '#ec636d',
+        'light-gry': '#eeeeee'
       },
       fontFamily: {
         'quicksand': ['Quicksand'],
