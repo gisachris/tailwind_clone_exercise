@@ -11,34 +11,33 @@ navBar.addEventListener('click', (e) => {
 });
 
 //navigation bar sticky scroll
-const navInputTrigger = document.getElementById("heroInput").firstElementChild
-const navigationBar = document.getElementById("nav")
+const navigationBar = document.getElementById("nav");
+let lastScrollY = 0;
 
-function navBarMover(direction, cssString) {
-    if (direction === 'top') {
+function handleScroll() {
+    const currentScrollY = window.scrollY;
 
+    if (currentScrollY > lastScrollY) {
+        // Scrolling down
+        navigationBar.classList.add("sticky", "top-2", "z-30", "flex", "justify-between", "mx-auto", "bg-fire-light-blue", "rounded-b-3xl", "pb-2");
+        navigationBar.classList.remove("absolute", "top-4");
     } else {
-
+        // Scrolling up
+        navigationBar.classList.add("absolute", "top-4", "min-w-full");
+        navigationBar.classList.remove("sticky", "top-2", "bg-fire-light-blue", "rounded-b-3xl", "pb-2");
     }
+
+    lastScrollY = currentScrollY;
 }
 
-//intersection observer
-const navIntersectionOptions = {
-    root: null,
-    threshold: 0
-}
+let isTicking = false;
 
-let navIntersectionObserver = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            if (entry.boundingClientRect.top > 0) { //moving down
-                // navBarMover('bottom', 'relative flex justify-between mt-10')
-            } else if (entry.boundingClientRect.top < 0) { //moving up
-                // navBarMover('bottom', 'sticky flex justify-between mt-10')
-            }
-        }
-    })
-}, navIntersectionOptions)
-
-//observe the input element
-navIntersectionObserver.observe(navInputTrigger)
+window.addEventListener('scroll', () => {
+    if (!isTicking) {
+        window.requestAnimationFrame(() => {
+            handleScroll();
+            isTicking = false;
+        });
+        isTicking = true;
+    }
+});
