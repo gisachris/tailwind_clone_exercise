@@ -592,10 +592,6 @@ video {
   position: relative;
 }
 
-.sticky{
-  position: sticky;
-}
-
 .inset-0{
   inset: 0px;
 }
@@ -638,10 +634,6 @@ video {
 
 .top-7{
   top: 1.75rem;
-}
-
-.top-2{
-  top: 0.5rem;
 }
 
 .-z-10{
@@ -724,6 +716,14 @@ video {
 
 .grid{
   display: grid;
+}
+
+.hidden{
+  display: none;
+}
+
+.h-4{
+  height: 1rem;
 }
 
 .h-5xl{
@@ -826,11 +826,6 @@ video {
 .rounded-b-semifull{
   border-bottom-right-radius: 200px;
   border-bottom-left-radius: 200px;
-}
-
-.rounded-b-3xl{
-  border-bottom-right-radius: 1.5rem;
-  border-bottom-left-radius: 1.5rem;
 }
 
 .rounded-br-casualfull{
@@ -971,10 +966,6 @@ video {
 
 .pt-2{
   padding-top: 0.5rem;
-}
-
-.pb-2{
-  padding-bottom: 0.5rem;
 }
 
 .font-quicksand{
