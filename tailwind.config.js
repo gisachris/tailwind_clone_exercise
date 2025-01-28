@@ -1,6 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["*.{html,js}"],
+  safelist: [
+    "sticky", "top-0", "z-30", "bg-fire-light-blue", "rounded-b-3xl", "pb-2", "hidden",
+    "absolute", "top-4"
+  ],
   theme: {
     extend: {
       width: {

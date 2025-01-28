@@ -632,6 +632,10 @@ video {
   right: 15%;
 }
 
+.top-0{
+  top: 0px;
+}
+
 .top-3{
   top: 0.75rem;
 }
@@ -676,6 +680,10 @@ video {
 .my-auto{
   margin-top: auto;
   margin-bottom: auto;
+}
+
+.mb-20{
+  margin-bottom: 5rem;
 }
 
 .mb-20{
@@ -1000,6 +1008,10 @@ video {
 .py-8{
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.pb-2{
+  padding-bottom: 0.5rem;
 }
 
 .pl-28{
