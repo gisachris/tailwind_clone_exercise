@@ -23,12 +23,10 @@ module.exports = {
         'quater': '45%',
         'thquater': '15%',
       },
-      backgroundColor: {
+      colors: {
         'fire-blue': '#0171f8',
         'fire-light-blue': '#017cf9',
         'fire-lighter-blue': '#108ff7',
-      },
-      colors: {
         'fire-pink': '#ec636d',
         'light-gry': '#eeeeee'
       },
