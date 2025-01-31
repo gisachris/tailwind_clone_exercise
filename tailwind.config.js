@@ -17,7 +17,8 @@ module.exports = {
       },
       borderRadius: {
         'semifull': '200px',
-        'casualfull': '700px'
+        'casualfull': '700px',
+        'semicasualfull': '150px',
       },
       inset: {
         'quater': '45%',
