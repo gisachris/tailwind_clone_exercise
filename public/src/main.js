@@ -12,6 +12,7 @@ navBar.addEventListener('click', (e) => {
 
 //navigation bar sticky scroll
 const navigationBar = document.getElementById("nav");
+const navImg = document.querySelector("#logo > a > img");
 let lastScrollY = 0;
 
 function handleScroll() {
@@ -22,11 +23,17 @@ function handleScroll() {
         navigationBar.classList.remove("absolute", "top-4");
         navigationBar.classList.add("sticky", "top-0", "z-30", "bg-fire-light-blue", "rounded-b-3xl", "pb-2");
         navigationBar.firstElementChild.classList.remove("hidden")
+
+        //resize logo img
+        navImg.classList.add("w-24", "my-auto", "my-32")
     } else if (currentScrollY < lastScrollY && currentScrollY <= 350) {
         // Scrolling up
         navigationBar.classList.remove("sticky", "top-0", "bg-fire-light-blue", "rounded-b-3xl", "pb-2");
         navigationBar.classList.add("absolute", "top-4");
         navigationBar.firstElementChild.classList.add("hidden")
+
+        //resize logo img
+        navImg.classList.remove("w-24", "my-32", "object-contain")
     }
 
     lastScrollY = currentScrollY;
