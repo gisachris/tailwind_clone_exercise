@@ -21,19 +21,19 @@ function handleScroll() {
     if (currentScrollY > lastScrollY) {
         // Scrolling down
         navigationBar.classList.remove("absolute", "top-4");
-        navigationBar.classList.add("sticky", "top-0", "z-30", "bg-fire-light-blue", "rounded-b-3xl", "pb-2");
+        navigationBar.classList.add("sticky", "top-0", "z-30", "bg-fire-light-blue", "rounded-b-3xl", "pb-2", "my-6");
         navigationBar.firstElementChild.classList.remove("hidden")
 
         //resize logo img
-        navImg.classList.add("w-24", "my-auto", "my-32")
+        navImg.classList.add("w-28", "my-auto")
     } else if (currentScrollY < lastScrollY && currentScrollY <= 350) {
         // Scrolling up
-        navigationBar.classList.remove("sticky", "top-0", "bg-fire-light-blue", "rounded-b-3xl", "pb-2");
+        navigationBar.classList.remove("sticky", "top-0", "bg-fire-light-blue", "rounded-b-3xl", "pb-2", "my-6");
         navigationBar.classList.add("absolute", "top-4");
         navigationBar.firstElementChild.classList.add("hidden")
 
         //resize logo img
-        navImg.classList.remove("w-24", "my-32", "object-contain")
+        navImg.classList.remove("w-28", "object-contain")
     }
 
     lastScrollY = currentScrollY;
