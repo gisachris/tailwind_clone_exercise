@@ -10,14 +10,14 @@
 
 <body class="relative m-3 font-quicksand">
     <nav id="nav" class="min-w-full z-30 flex-col mx-auto absolute top-4 transition-all duration-200 ease-in-out">
-        <div id="whiteSeparator" class="bg-white min-w-full w-full h-3 mb-2 hidden"></div>
+        <div id="whiteSeparator" class="bg-white min-w-full w-full h-2 mb-2 hidden"></div>
         <div id="NavComponentsholder" class="flex justify-between">
             <div id="logo" class="relative min-w-fit min-h-full ml-8">
                 <a href="#home">
-                    <img src="./public/imgs/logo.png" alt="logo">
+                    <img src="./public/imgs/logo.png" alt="logo" class="object-contain">
                 </a>
             </div>
-            <div id="navbar" class="relative min-w-fit min-h-full mr-28 my-auto">
+            <div id="navbar" class="relative min-w-fit min-h-full mr-10 my-auto">
                 <ul id="navList" class="flex gap-x-12 min-h-full items-center justify-center text-white">
                     <li class="navHover navActive"><a href="#Home">Home</a></li>
                     <li class="navHover"><a href="#OurShop">Our Shop</a></li>
@@ -97,12 +97,88 @@
             </div>
         </div>
     </div>
-    <div id="trendSection" class="mt-12 pl-5">
+    <div id="trendSection" class="mt-12 pl-5 mb-10">
         <span class="text-fire-pink font-bold font-roboto">TRENDING</span>
-        <div id="trendHeader" class="flex justify-between mx-auto pr-10 mt-3 items-center ">
-            <span class="text-2xl font-roboto font-extrabold">Trending Games</span>
-            <button class="px-6 py-3 bg-fire-pink text-white font-roboto rounded-3xl font-extrabold mr-16">VIEW
+        <div id="trendHeader" class="flex justify-between mx-auto pr-10 mt-3 items-center mb-20">
+            <span class="text-4xl font-roboto font-extrabold">Trending Games</span>
+            <button class="px-6 py-3 bg-fire-pink text-white font-roboto rounded-3xl font-extrabold">VIEW
                 ALL</button>
+        </div>
+        <div id="gameSection" class="lg:grid lg:grid-cols-4 lg:gap-x-6 mr-10">
+            <div id="game1"
+                class="bg-light-gry rounded-3xl overflow-hidden p-0 max-w-fit relative lg:w-72 transition-all duration-300 group hover:text-fire-light-blue">
+                <img src="./public/imgs/games_01.jpeg" alt="game" class="rounded-3xl w-full">
+                <div id="money" class="absolute z-10 bg-fire-light-blue px-4 py-1 mx-auto rounded-xl top-6 right-6">
+                    <span class="text-white font-normal font-roboto text-sm block line-through text-center">$22</span>
+                    <span class="text-white font-extrabold font-roboto text-lg">$20</span>
+                </div>
+                <div id="gameText" class="grid grid-cols-6 mt-8 pr-4 pb-6">
+                    <div class="font-roboto min-w-full col-span-4 pl-6 flex flex-col">
+                        <span class=" font-roboto text-gray-500 font-light">Action</span>
+                        <span class="font-bold font-roboto text-lg min-w-fit">Assassin Creed</span>
+                    </div>
+                    <div
+                        class="p-3 w-12 h-12 relative bg-fire-pink rounded-full col-start-6 group-hover:bg-fire-light-blue">
+                        <img class="object-contain w-full h-full" src="./public/imgs/shopping_bag.png"
+                            alt="Description">
+                    </div>
+                </div>
+            </div>
+            <div id="game2"
+                class="bg-light-gry rounded-3xl overflow-hidden p-0 max-w-fit relative lg:w-72 transition-all duration-300 group hover:text-fire-light-blue">
+                <img src="./public/imgs/games_02.jpeg" alt="game" class="rounded-3xl w-full">
+                <div id="money" class="absolute z-10 bg-fire-light-blue px-4 py-1 mx-auto rounded-xl top-6 right-6">
+                    <span class="text-white font-extrabold font-roboto text-lg">$44</span>
+                </div>
+                <div id="gameText" class="grid grid-cols-6 mt-8 pr-4">
+                    <div class="font-roboto min-w-full col-span-4 pl-6 flex flex-col">
+                        <span class="font-roboto text-gray-500 font-light">Action</span>
+                        <span class="font-bold font-roboto text-lg min-w-full">Assassin Creed</span>
+                    </div>
+                    <div
+                        class="p-3 w-12 h-12 relative bg-fire-pink rounded-full col-start-6 group-hover:bg-fire-light-blue">
+                        <img class="object-contain w-full h-full" src="./public/imgs/shopping_bag.png"
+                            alt="Description">
+                    </div>
+                </div>
+            </div>
+            <div id="game3"
+                class="bg-light-gry rounded-3xl overflow-hidden p-0 max-w-fit relative lg:w-72 transition-all duration-300 group hover:text-fire-light-blue">
+                <img src="./public/imgs/games_04.jpeg" alt="game" class="rounded-3xl w-full">
+                <div id="money" class="absolute z-10 bg-fire-light-blue px-4 py-1 mx-auto rounded-xl top-6 right-6">
+                    <span class="text-white font-normal font-roboto text-sm block line-through text-center">$64</span>
+                    <span class="text-white font-extrabold font-roboto text-lg">$44</span>
+                </div>
+                <div id="gameText" class="grid grid-cols-6 mt-8 pr-4">
+                    <div class="font-roboto min-w-full col-span-4 pl-6 flex flex-col">
+                        <span class="font-roboto text-gray-500 font-light">Action</span>
+                        <span class="font-bold font-roboto text-lg min-w-full">Assassin Creed</span>
+                    </div>
+                    <div
+                        class="p-3 w-12 h-12 relative bg-fire-pink rounded-full col-start-6 group-hover:bg-fire-light-blue">
+                        <img class="object-contain w-full h-full" src="./public/imgs/shopping_bag.png"
+                            alt="Description">
+                    </div>
+                </div>
+            </div>
+            <div id="game4"
+                class="bg-light-gry rounded-3xl overflow-hidden p-0 max-w-fit relative lg:w-72 transition-all duration-300 group hover:text-fire-light-blue">
+                <img src="./public/imgs/games_03.jpeg" alt="game" class="rounded-3xl w-full">
+                <div id="money" class="absolute z-10 bg-fire-light-blue px-4 py-1 mx-auto rounded-xl top-6 right-6">
+                    <span class="text-white font-extrabold font-roboto text-lg">$32</span>
+                </div>
+                <div id="gameText" class="grid grid-cols-6 mt-8 pr-4">
+                    <div class="font-roboto min-w-full col-span-4 pl-6 flex flex-col">
+                        <span class="font-roboto text-gray-500 font-light">Action</span>
+                        <span class="font-bold font-roboto text-lg min-w-full">Assassin Creed</span>
+                    </div>
+                    <div
+                        class="p-3 w-12 h-12 relative bg-fire-pink rounded-full col-start-6 group-hover:bg-fire-light-blue">
+                        <img class="object-contain w-full h-full" src="./public/imgs/shopping_bag.png"
+                            alt="Description">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <script src="./public/src/main.js"></script>
