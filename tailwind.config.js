@@ -36,7 +36,8 @@ module.exports = {
         'roboto': ['Roboto']
       },
       fontSize: {
-        '5xl': '2rem'
+        '5xl': '2rem',
+        '6xl': '2.5rem',
       },
       boxShadow: {
         'custom-xs': '0 1px 1px rgba(0, 0, 0, 0.02)'
