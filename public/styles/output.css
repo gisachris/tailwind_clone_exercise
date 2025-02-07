@@ -888,6 +888,10 @@ video {
   min-height: 130px;
 }
 
+.min-h-\[160px\]{
+  min-height: 160px;
+}
+
 .w-12{
   width: 3rem;
 }
